@@ -8,7 +8,7 @@
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
     "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
     "test:coverage": "nyc npm test",
-    "prepush": "npm run lint && npm test:coverage",
+    "prepush": "npm run lint && npm run test:coverage",
     "start": "./node_modules/.bin/webpack-dev-server"
   },
   "nyc": {
